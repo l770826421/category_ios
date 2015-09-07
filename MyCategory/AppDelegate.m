@@ -17,7 +17,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
     return YES;
+}
+
+//后台获取代码并通知系统
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    static int count = 0;
+    while (count < 100)
+    {
+        count++;
+        XSZMLog(@"count == %d", count);
+    }
+    count = 0;
+    completionHandler(UIBackgroundFetchResultNoData);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -28,6 +42,13 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    static int count = 0;
+    while (count < 100)
+    {
+        count++;
+        XSZMLog(@"count == %d", count);
+    }
+    count = 0;
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
