@@ -6,26 +6,25 @@
 //  Copyright (c) 2013年 My company name. All rights reserved.
 //
 
-
-#import "XSZ_UICommon.h"
-#import "XSZ_Tooles.h"
-#import "UIView+XSZCommon.h"
-#import "NSString+XSZCommon.h"
-#import "ChineseToPinyin.h"
-#import "XSZAlertView.h"
-#import "Reachability.h"
+#import "Macros_UICommon.h"
 #import "BigBtn.h"
+#import "ChineseToPinyin.h"
+
+#import "MBProgressHUD.h"
+#import "MBHUDTool.h"
+
+#define kMBHUDTool [MBHUDTool sharedMBHUDTool]
+
+#import "Reachability.h"
+
+#import "UIView+Common.h"
+#import "LKX_Tooles.h"
+#import "LKXAlertView.h"
 
 
-#define kDES_SessionID     @"SESSIONID"             //加密Key
-//NSUserDefaults 用户默认值
-#define kUserDefaults [NSUserDefaults standardUserDefaults]
-#define kDES_SessionID_Str  [kUserDefaults objectForKey:kDES_SessionID]     //读出SessionID
-#define kFileManager          [NSFileManager defaultManager]
+#import "NSString+category.h"
+#import "NSString+Verification.h"
+#import "NSString+Encryption.h"
 
-//监听
-#define kNotifi [NSNotificationCenter defaultCenter]
 
-//文件保存目录
-#define PATH_OF_DOCUMENT        [NSHomeDirectory()  stringByAppendingPathComponent:@"Documents"]
 

@@ -8,7 +8,7 @@
 
 #import "NSData+category.h"
 
-@implementation NSData (category)
+@implementation NSData (Category)
 
 /*
  * 将图片转为NSData

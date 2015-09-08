@@ -1,26 +1,26 @@
 //
-//  UIView+XSZCommon.m
+//  UIView+LKXCommon.m
 //  ChatApp
 //
 //  Created by cnmobi1 on 13-9-13.
 //  Copyright (c) 2013年 cnmobi1. All rights reserved.
 //
 
-#import "UIView+XSZCommon.h"
+#import "UIView+Common.h"
 #import "BigBtn.h"
 
-@implementation UIView (XSZCommon)
+@implementation UIView (Common)
 
 
 #pragma mark - 获取视图的上下左右宽高
--(float)Top
+- (float)Top
 {
     float length = 0.0;
     length = self.frame.origin.y;
     return length;
 }
 
--(float)Bottom
+- (float)Bottom
 {
     float length = 0.0;
     length = self.frame.origin.y + self.frame.size.height;
@@ -28,7 +28,7 @@
 }
 
 
--(float)Left
+- (float)Left
 {
     float length = 0.0;
     length = self.frame.origin.x;
@@ -36,7 +36,7 @@
 }
 
 
--(float)Right
+- (float)Right
 {
     float length = 0.0;
     length = self.frame.origin.x + self.frame.size.width;
@@ -45,7 +45,7 @@
 
 
 
--(float)Width
+- (float)Width
 {
     float length = 0.0;
     length = self.frame.size.width;
@@ -53,7 +53,7 @@
 }
 
 
--(float)Height
+- (float)Height
 {
     float length = 0.0;
     length = self.frame.size.height;
@@ -61,38 +61,38 @@
 }
 
 #pragma mark - 获取视图的常用坐标
--(CGPoint)FrameOrigin
+- (CGPoint)FrameOrigin
 {
     return  self.frame.origin;
 }
 
 
--(CGSize)FrameSize
+- (CGSize)FrameSize
 {
     return  self.frame.size;
 }
 
 
--(CGPoint)FrameCenter
+- (CGPoint)FrameCenter
 {
     return  self.center;
 }
 
 
 
--(CGPoint)BoundsOrigin
+- (CGPoint)BoundsOrigin
 {
     return  self.bounds.origin;
 }
 
 
--(CGSize)BoundsSize
+- (CGSize)BoundsSize
 {
     return  self.bounds.size;
 }
 
 
--(CGPoint)BoundsCenter
+- (CGPoint)BoundsCenter
 {
     return  CGPointMake(self.Width/2.0, self.Height/2.0);
 }
@@ -156,44 +156,6 @@
     return SaveImage;
 }
 
-
-
-#pragma mark - CreateImageWithColor     //由UIColor创建图片
-/**
- * 将UIColor变换为UIImage
- *
- **/
-+ (UIImage *)CreateImageWithColor:(UIColor *)color
-{
-    CGRect rect = CGRectMake(0.0f, 0.0f, 10.0f, 10.0f);
-//    UIGraphicsBeginImageContext(rect.size);
-//    CGContextRef context = UIGraphicsGetCurrentContext();
-//    CGContextSetFillColorWithColor(context, [color CGColor]);
-//    CGContextFillRect(context, rect);
-//    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-    
-    return [self CreateImageWithColor:color rect:rect];
-}
-
-/*
- * 创建自定义大小的UIImage
- *
- */
-+ (UIImage *)CreateImageWithColor:(UIColor *)color rect:(CGRect)aRect
-{
-    CGRect rect = aRect;
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return theImage;
-}
-
-
 #pragma mark -  //绘制可以带虚线框的View视图
 //绘制可以呆虚线框的View视图
 - (void)setShapeLayerWithBGColor:(UIColor *)BGColor         //背景色
@@ -204,11 +166,11 @@
                   andBorderColor:(UIColor *)BorderColor     //虚线颜色
 {
     //border definitions
-	CGFloat     cornerRadius    = CornerRadiu;
-	CGFloat     borderWidth     = BorderWidth;
-	NSInteger   dashPattern1    = Pattern1;
-	NSInteger   dashPattern2    = Pattern2;
-	UIColor     *lineColor      = BorderColor;
+    CGFloat     cornerRadius    = CornerRadiu;
+    CGFloat     borderWidth     = BorderWidth;
+    NSInteger   dashPattern1    = Pattern1;
+    NSInteger   dashPattern2    = Pattern2;
+    UIColor     *lineColor      = BorderColor;
     
     
     [self setBackgroundColor:BGColor
@@ -217,41 +179,41 @@
               andBorderColor:[UIColor clearColor]];
     
     //drawing
-	CGRect frame = self.bounds;
+    CGRect frame = self.bounds;
     
-	CAShapeLayer *_shapeLayer = [CAShapeLayer layer];
+    CAShapeLayer *_shapeLayer = [CAShapeLayer layer];
     
     //creating a path
-	CGMutablePathRef path = CGPathCreateMutable();
+    CGMutablePathRef path = CGPathCreateMutable();
     
     //drawing a border around a view
-	CGPathMoveToPoint(path, NULL, 0, frame.size.height - cornerRadius);
-	CGPathAddLineToPoint(path, NULL, 0, cornerRadius);
-	CGPathAddArc(path, NULL, cornerRadius, cornerRadius, cornerRadius, M_PI, -M_PI_2, NO);
-	CGPathAddLineToPoint(path, NULL, frame.size.width - cornerRadius, 0);
-	CGPathAddArc(path, NULL, frame.size.width - cornerRadius, cornerRadius, cornerRadius, -M_PI_2, 0, NO);
-	CGPathAddLineToPoint(path, NULL, frame.size.width, frame.size.height - cornerRadius);
-	CGPathAddArc(path, NULL, frame.size.width - cornerRadius, frame.size.height - cornerRadius, cornerRadius, 0, M_PI_2, NO);
-	CGPathAddLineToPoint(path, NULL, cornerRadius, frame.size.height);
-	CGPathAddArc(path, NULL, cornerRadius, frame.size.height - cornerRadius, cornerRadius, M_PI_2, M_PI, NO);
+    CGPathMoveToPoint(path, NULL, 0, frame.size.height - cornerRadius);
+    CGPathAddLineToPoint(path, NULL, 0, cornerRadius);
+    CGPathAddArc(path, NULL, cornerRadius, cornerRadius, cornerRadius, M_PI, -M_PI_2, NO);
+    CGPathAddLineToPoint(path, NULL, frame.size.width - cornerRadius, 0);
+    CGPathAddArc(path, NULL, frame.size.width - cornerRadius, cornerRadius, cornerRadius, -M_PI_2, 0, NO);
+    CGPathAddLineToPoint(path, NULL, frame.size.width, frame.size.height - cornerRadius);
+    CGPathAddArc(path, NULL, frame.size.width - cornerRadius, frame.size.height - cornerRadius, cornerRadius, 0, M_PI_2, NO);
+    CGPathAddLineToPoint(path, NULL, cornerRadius, frame.size.height);
+    CGPathAddArc(path, NULL, cornerRadius, frame.size.height - cornerRadius, cornerRadius, M_PI_2, M_PI, NO);
     
     //path is set as the _shapeLayer object's path
-	_shapeLayer.path = path;
-	CGPathRelease(path);
+    _shapeLayer.path = path;
+    CGPathRelease(path);
     
-	_shapeLayer.backgroundColor = [[UIColor clearColor] CGColor];
-	_shapeLayer.frame = frame;
-	_shapeLayer.masksToBounds = NO;
-	[_shapeLayer setValue:[NSNumber numberWithBool:NO] forKey:@"isCircle"];
-	_shapeLayer.fillColor = [[UIColor clearColor] CGColor];
-	_shapeLayer.strokeColor = [lineColor CGColor];
-	_shapeLayer.lineWidth = borderWidth;
-	_shapeLayer.lineDashPattern = [NSArray arrayWithObjects:[NSNumber numberWithInteger:dashPattern1], [NSNumber numberWithInteger:dashPattern2], nil];
-	_shapeLayer.lineCap = kCALineCapRound;
+    _shapeLayer.backgroundColor = [[UIColor clearColor] CGColor];
+    _shapeLayer.frame = frame;
+    _shapeLayer.masksToBounds = NO;
+    [_shapeLayer setValue:[NSNumber numberWithBool:NO] forKey:@"isCircle"];
+    _shapeLayer.fillColor = [[UIColor clearColor] CGColor];
+    _shapeLayer.strokeColor = [lineColor CGColor];
+    _shapeLayer.lineWidth = borderWidth;
+    _shapeLayer.lineDashPattern = [NSArray arrayWithObjects:[NSNumber numberWithInteger:dashPattern1], [NSNumber numberWithInteger:dashPattern2], nil];
+    _shapeLayer.lineCap = kCALineCapRound;
     
     //_shapeLayer is added as a sublayer of the view
-	[self.layer addSublayer:_shapeLayer];
-	self.layer.cornerRadius = cornerRadius;
+    [self.layer addSublayer:_shapeLayer];
+    self.layer.cornerRadius = cornerRadius;
 }
 
 
@@ -363,6 +325,51 @@
 
 
 
+
+#pragma mark - CreateImageWithColor     //由UIColor创建图片
+/**
+ *  创建自定义大小的UIImage
+ *
+ *  @param color image的颜色
+ *
+ *  @return 自定的UIImage
+ */
++ (UIImage *)createImageWithColor:(UIColor *)color
+{
+    CGRect rect = CGRectMake(0.0f, 0.0f, 10.0f, 10.0f);
+//    UIGraphicsBeginImageContext(rect.size);
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    CGContextSetFillColorWithColor(context, [color CGColor]);
+//    CGContextFillRect(context, rect);
+//    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+    
+    return [self createImageWithColor:color rect:rect];
+}
+
+/**
+ *  创建自定义大小的UIImage
+ *
+ *  @param color image的颜色
+ *  @param aRect image大小
+ *
+ *  @return 自定的UIImage
+ */
++ (UIImage *)createImageWithColor:(UIColor *)color
+                             rect:(CGRect)aRect
+{
+    CGRect rect = aRect;
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return theImage;
+}
+
+
 #pragma mark - AllViews
 /*
  
@@ -373,7 +380,7 @@
  userinterface      是否开启交互
  
  */
-+(UIImageView *)CreateImageViewWithImage:(UIImage *)image
++ (UIImageView *)createImageViewWithImage:(UIImage *)image
                                andFrame:(CGRect)frame
               andUserInteractionEnabled:(BOOL)userinterface
 {
@@ -399,7 +406,7 @@
  action             事件执行函数
  
  */
-+(UIButton *)CreateButtonWithTitle:(NSString *)title
++ (UIButton *)createButtonWithTitle:(NSString *)title
                           andFrame:(CGRect)frame
                            andType:(UIButtonType)type
                 andBackGroundColor:(UIColor *)color
@@ -438,7 +445,7 @@
  textalignment      文字排版
  
  */
-+(UILabel *)CreateLabelWithText:(NSString *)text
++ (UILabel *)createLabelWithText:(NSString *)text
                       andFrame:(CGRect)frame
                        andFont:(UIFont *)font
                   andTextColor:(UIColor *)T_Color
@@ -468,7 +475,7 @@
  textalignment      文字排版
  
  */
-+(UITextField *)CreateTextFieldWithText:(NSString *)text
++ (UITextField *)createTextFieldWithText:(NSString *)text
                                andFrame:(CGRect)frame
                                 andFont:(UIFont *)font
                            andTextColor:(UIColor *)T_Color
@@ -486,11 +493,5 @@
 
     return TextField;
 }
-
-
-
-
-
-
 
 @end

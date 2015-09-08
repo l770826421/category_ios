@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (category)
+@interface NSData (Category)
 
 /*
  * 将图片转为NSData

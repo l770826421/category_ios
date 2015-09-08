@@ -193,7 +193,7 @@
 
 - (void)resetDemo
 {
-    XSZMLog(@"resetDem0");
+    LKXMLog(@"resetDem0");
     _redView.frame = firstFrame;
 }
 

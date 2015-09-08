@@ -8,7 +8,7 @@
 
 #import "NSArray+category.h"
 
-@implementation NSArray (category)
+@implementation NSArray (Category)
 
 /*
  * 数组是否包含某个字符串

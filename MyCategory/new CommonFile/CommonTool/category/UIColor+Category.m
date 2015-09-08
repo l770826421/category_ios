@@ -8,7 +8,7 @@
 
 #import "UIColor+category.h"
 
-@implementation UIColor (category)
+@implementation UIColor (Category)
 /*!
  * @method 通过16进制计算颜色
  * @abstract

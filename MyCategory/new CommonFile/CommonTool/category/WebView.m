@@ -57,17 +57,17 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    XSZNLog(@"开始下载");
+    LKXNLog(@"开始下载");
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    XSZNLog(@"结束下载");
+    LKXNLog(@"结束下载");
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
-    XSZNLog(@"错误error == %@", error.description);
+    LKXNLog(@"错误error == %@", error.description);
 }
 
 @end

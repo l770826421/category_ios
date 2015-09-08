@@ -1,23 +1,24 @@
 //
-//  XSZ_UICommon.h
-//  MyHeadFile
+//  Macros_UICommon.h
+//  MyCategory
 //
-//  Created by qiaoxing on 13-1-12.
-//  Copyright (c) 2013年 My company name. All rights reserved.
+//  Created by Developer on 15/9/8.
+//  Copyright (c) 2015年 Developer. All rights reserved.
 //
+
+#ifndef MyCategory_Macros_UICommon_h
+#define MyCategory_Macros_UICommon_h
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>                                   //需要添加 QuartzCore.framework 库函数
-/*******************************************************************************************************/
-/*
- 
- 此处宏定义用于当前苹果设备的硬件参数
- 屏幕宽度和屏幕高度
- 宏定义屏幕相关视图尺寸
- 
+
+#pragma mark - 设备相关
+/** 
+  * 此处宏定义用于当前苹果设备的硬件参数,
+  * 屏幕宽度和屏幕高度
+  * 宏定义屏幕相关视图尺寸
  */
-/*******************************************************************************************************/
 
 #define Dev_Name            [UIDevice currentDevice].name                           //返回当前设备名称
 #define Dev_IOSName         [UIDevice currentDevice].systemName                     //返回当前系统名称
@@ -43,7 +44,7 @@
 #define isIPHone5           (Dev_ScreenHeight ==  568) ? YES : NO                   //判断是否是iphone5
 #define isIPad              (Dev_ScreenHeight >  568) ? YES : NO                    //判断是否是ipad
 #define isHideKeyBarod      ![[UIApplication sharedApplication].keyWindow isFirstResponder]
-                                                                                    //判断是否隐藏键盘
+//判断是否隐藏键盘
 
 
 #define SIZE_IPhone_Width   320                                                     //返回IPHONE屏幕宽度320
@@ -68,13 +69,7 @@
 #define Nav_BackBut_Frame           CGRectMake(5, 7, 48, 30)
 #define Nav_RightBut_Frame          CGRectMake(SIZE_NavBar_Width - Nav_ButWidth - 5, 7, Nav_ButWidth, Nav_ButHight)
 
-
-/*******************************************************************************************************/
-/*
- 常用颜色
- */
-/*******************************************************************************************************/
-
+#pragma mark - 颜色相关
 //常用颜色
 #define CLEARCOLOR [UIColor clearColor]
 #define WHITECOLOR [UIColor whiteColor]
@@ -85,11 +80,19 @@
 #define BLUECOLOR  [UIColor blueColor]
 #define BROWNCOLOR [UIColor brownColor]
 
-/*******************************************************************************************************/
-/*
- 读取项目的Info.plist文件
- */
-/*******************************************************************************************************/
+//宏定义该应用程序所有的颜色
+#define RGBCOLOR(r,g,b)             [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define RGBACOLOR(r,g,b,a)          [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define ColorWithHex(str) [LKX_Tooles colorFromHexRGB:str]
+
+// 宏定义创建颜色图片
+#define ImageNamed(_name)           [UIImage imageNamed:_name]
+#define ImageWithRGB(r,g,b)         [UIView createImageWithColor:RGBCOLOR(r,g,b)]
+#define ImageWithColor(Color)       [UIView createImageWithColor:Color]
+
+#pragma mark - 项目Info.plist文件相关
+
+// 读取项目的Info.plist文件
 #pragma mark - Info.Plist
 
 #define kInfoPlistDict              [[NSBundle mainBundle] infoDictionary]
@@ -100,38 +103,22 @@
 
 
 
-
-/*******************************************************************************************************/
-/*
- 安全释放对象
- */
-/*******************************************************************************************************/
-
+#pragma mark - 安全释放对象
 #define RELEASE_SAFELY(_OPINTER)    {if(_OPINTER) {[_OPINTER release]; _OPINTER = nil; }}
 
 
+#pragma mark - NSLog 打印
+// 调试打印输出 LKXNLogState ＝ 1 可以打印， ＝ 0 不打印
+#define LKXLogState 1
 
-/*******************************************************************************************************/
-/*
- 调试打印输出 XSZNLogState ＝ 1 可以打印， ＝ 0 不打印
- */
-/*******************************************************************************************************/
-#pragma mark - NSLog
+#define LKXMLog(__format, ... ) if(LKXLogState) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(__format), ##__VA_ARGS__])
 
-#define XSZLogState 1
-
-#define XSZMLog(__format, ... ) if(XSZLogState) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(__format), ##__VA_ARGS__])
-
-#define XSZNLog(__format, ... ) if(XSZLogState) NSLog( @"%@",[NSString stringWithFormat:(__format), ##__VA_ARGS__])
+#define LKXNLog(__format, ... ) if(LKXLogState) NSLog( @"%@",[NSString stringWithFormat:(__format), ##__VA_ARGS__])
 
 
 
-
-/*******************************************************************************************************/
-/*
- 字体格式选择
- */
-/*******************************************************************************************************/
+#pragma mark - 字体相关
+// 字体格式选择
 #pragma mark - UIFont
 
 #define FONT_NewRoman               @"Times New Roman"          //新罗马字体
@@ -157,38 +144,43 @@
 #define FontSize(_size)             [UIFont systemFontOfSize:_size]
 #define FontNameSize(_name,_size)   [UIFont fontWithName:_name size:_size]
 
+#pragma mark - 动画相关
+// 此处宏定义用于设置VIEW的动画参数,宏定义动画效果
+
+#define AMTION_TYPE_CATFADE         kCATransitionFade           //渐变
+#define AMTION_TYPE_CATPUSH         kCATransitionPush           //推挤
+#define AMTION_TYPE_CATREVEAL       kCATransitionReveal         //揭开
+#define AMTION_TYPE_CATMOVEIN       kCATransitionMoveIn         //覆盖
+
+#define AMTION_TYPE_CUBE            @"cube"                     //立方翻转
+#define AMTION_TYPE_SUCKEFFECT      @"suckEffect"               //三角
+#define AMTION_TYPE_OGLFLIP         @"oglFlip"                  //上下翻转
+#define AMTION_TYPE_RIPPLEEFFECT    @"rippleEffect"             //水波抖动
+#define AMTION_TYPE_PAGECURL        @"pageCurl"                 //上翻页
+#define AMTION_TYPE_PAGEUNCURL      @"pageUnCurl"               //下翻页
+#define AMTION_TYPE_CAMEROPEN       @"cameraIrisHollowOpen"     //相机打开
+#define AMTION_TYPE_CAMERCLOSE	    @"cameraIrisHollowClose"    //相机关闭
 
 
-#pragma mark - XSZ_UICommon
-/*******************************************************************************************************/
-/*
- 常用函数类型
- */
-/*******************************************************************************************************/
-@interface XSZ_UICommon : NSObject
-
-+(BOOL)XSZ_IsPhoneSupported;                                    //判断当前设备是否支持IPone
-+(BOOL)XSZ_IsPad;                                               //判断是设备是否IPad
-+(UIInterfaceOrientation)XSZ_DeviceOrientation;                   //返回当前设备的握持姿势
+//宏定义动画的方向
+#define AMTION_FROM_LEFT            kCATransitionFromLeft       //从左
+#define AMTION_FROM_RIGHT           kCATransitionFromRight      //从右
+#define AMTION_FROM_TOP             kCATransitionFromTop        //从顶部
+#define AMTION_FROM_BOTTOM          kCATransitionFromBottom     //从底部
 
 
-//判断当前的设备是否支持该手持姿势，IPad全支持，IPhone不允许倒立持握
-+(BOOL)XSZ_IsSupportedOriention:(UIInterfaceOrientation) orientation;
+#pragma mark - 文件操作
+//NSUserDefaults 用户默认值
+#define kUserDefaults [NSUserDefaults standardUserDefaults]
+#define kFileManager          [NSFileManager defaultManager]
 
-//判断旋转
-+(CGAffineTransform) XSZ_RotateTransformForOrientTation:(UIInterfaceOrientation)orientation;
+//监听
+#define kNotifi [NSNotificationCenter defaultCenter]
 
+//文件保存目录
+#define PATH_OF_DOCUMENT        [NSHomeDirectory()  stringByAppendingPathComponent:@"Documents"]
 
-@end
+#define kAppDelegate [UIApplication sharedApplication].delegate
+#define kLocalizedString(string) NSLocalizedString(string, nil)
 
-
-
-
-
-
-
-
-
-
-
-
+#endif

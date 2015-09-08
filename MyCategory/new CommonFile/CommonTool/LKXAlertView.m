@@ -1,5 +1,5 @@
 //
-//  XSZAlertView.m
+//  LKXAlertView.m
 //  Test
 //
 //  Created by cnmobi1 on 14-4-29.
@@ -9,9 +9,9 @@
 
 //  This File need  -fobjc-arc
 
-#import "XSZAlertView.h"
+#import "LKXAlertView.h"
 
-@implementation XSZAlertView
+@implementation LKXAlertView
 
 
 - (id)initWithFrame:(CGRect)frame
@@ -220,8 +220,8 @@
 
 -(void)TouchUpInsideFuncation:(UIButton *)button
 {
-    if (_delegate&&[_delegate respondsToSelector:@selector(XSZAlertView:clickedButtonAtIndex:)]) {
-        [_delegate XSZAlertView:self clickedButtonAtIndex:button.tag];
+    if (_delegate&&[_delegate respondsToSelector:@selector(LKXAlertView:clickedButtonAtIndex:)]) {
+        [_delegate LKXAlertView:self clickedButtonAtIndex:button.tag];
     }
     
     UIWindow *MainWindow = [[UIApplication sharedApplication] keyWindow];

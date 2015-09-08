@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (category)
+@interface UIColor (Category)
 /*!
  * @method 通过16进制计算颜色
  * @abstract

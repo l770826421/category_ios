@@ -8,7 +8,7 @@
 
 #import "UIButton+categoty.h"
 
-@implementation UIButton (categoty)
+@implementation UIButton (Categoty)
 
 /*
  * *给button添加角标

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIButton (categoty)
+@interface UIButton (Categoty)
 
 /*
  * *给button添加角标

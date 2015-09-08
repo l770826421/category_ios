@@ -1,5 +1,5 @@
 //
-//  XSZAlertView.h
+//  LKXAlertView.h
 //  Test
 //
 //  Created by cnmobi1 on 14-4-29.
@@ -10,7 +10,7 @@
 
 #define ARGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
 
-@interface XSZAlertView : UIView
+@interface LKXAlertView : UIView
 {
     CGFloat         AltViewHight;
     CGFloat         AltViewWidth;
@@ -27,7 +27,7 @@
 }
 
 
-@property(nonatomic,assign) id /*<XSZAlertViewDelegate>*/ delegate;
+@property(nonatomic,assign) id /*<LKXAlertViewDelegate>*/ delegate;
 
 - (id)initWithTitle:(NSString *)title
             message:(NSString *)message
@@ -40,13 +40,10 @@
 
 @end
 
-
-
-
-@protocol XSZAlertViewDelegate <NSObject>
+@protocol LKXAlertViewDelegate <NSObject>
 @optional
 
-- (void)XSZAlertView:(XSZAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
+- (void)LKXAlertView:(LKXAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 
 @end
 

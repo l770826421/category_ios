@@ -28,7 +28,7 @@
     while (count < 100)
     {
         count++;
-        XSZMLog(@"count == %d", count);
+        LKXMLog(@"count == %d", count);
     }
     count = 0;
     completionHandler(UIBackgroundFetchResultNoData);
@@ -46,7 +46,7 @@
     while (count < 100)
     {
         count++;
-        XSZMLog(@"count == %d", count);
+        LKXMLog(@"count == %d", count);
     }
     count = 0;
 }

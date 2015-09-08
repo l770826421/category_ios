@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (category)
+@interface NSArray (Category)
 
 /*
  * 数组是否包含某个字符串

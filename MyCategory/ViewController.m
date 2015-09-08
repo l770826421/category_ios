@@ -122,7 +122,7 @@
     Class mailClass = NSClassFromString(@"MFMailComposeViewController");
     if (!mailClass)
     {
-        XSZMLog(@"用户没有设置邮件账户");
+        LKXMLog(@"用户没有设置邮件账户");
         return;
     }
     [self displayMailPicker];
@@ -203,7 +203,7 @@
             msg = @"其他";
             break;
     }
-    XSZMLog(@"msg == %@", msg);
+    LKXMLog(@"msg == %@", msg);
 }
 
 
