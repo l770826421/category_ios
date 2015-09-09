@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 cnmobi. All rights reserved.
 //
 
-#import "NSString+category.h"
+#import "NSString+Category.h"
 
 @implementation NSString (Category)
 
@@ -99,6 +99,30 @@
         [string appendFormat:@"%dminute", minute];  //minute
     }
     return string;
+}
+
+/**
+ *  将GB2312字符转为UTF-8
+ *
+ *  @param data GB2312字符Data
+ *
+ *  @return UTF-8字符串
+ */
++ (NSString *)GB2312ToUTF8:(NSData *)data
+{
+    NSStringEncoding encoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_2312_80);
+    NSString *rstString = [[NSString alloc] initWithData:data encoding:encoding];
+    return rstString;
+}
+
+- (NSString *)encodingURLString
+{
+    NSString *encodingString = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)self, NULL, CFSTR(":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+    if (encodingString.length > 0)
+    {
+        return encodingString;
+    }
+    return @"";
 }
 
 #pragma mark - 实例方法
@@ -280,30 +304,6 @@
                                       context:nil].size;
     }
     return tempSize;
-}
-
-/**
- *  将GB2312字符转为UTF-8
- *
- *  @param data GB2312字符Data
- *
- *  @return UTF-8字符串
- */
-+ (NSString *)GB2312ToUTF8:(NSData *)data
-{
-    NSStringEncoding encoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_2312_80);
-    NSString *rstString = [[NSString alloc] initWithData:data encoding:encoding];
-    return rstString;
-}
-
-- (NSString *)encodingURLString
-{
-    NSString *encodingString = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)self, NULL, CFSTR(":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
-    if (encodingString.length > 0)
-    {
-        return encodingString;
-    }
-    return @"";
 }
 
 @end

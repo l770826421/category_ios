@@ -32,6 +32,15 @@
  */
 + (NSString *)remainTimeString:(long long )timeInterval;
 
+/**
+ *  将GB2312字符转为UTF-8
+ *
+ *  @param data GB2312字符Data
+ *
+ *  @return UTF-8字符串
+ */
++ (NSString *)GB2312ToUTF8:(NSData *)data;
+
 #pragma mark - 实例方法
 /**
  *  将字符串中得某些字符或字符串设置不同字体颜色
@@ -111,23 +120,5 @@
  */
 - (CGSize)getSizeWithTextSize:(CGSize)textSize
                          fontSize:(CGFloat)fontSize;
-
-/**
- *  将GB2312字符转为UTF-8
- *
- *  @param data GB2312字符Data
- *
- *  @return UTF-8字符串
- */
-+ (NSString *)GB2312ToUTF8:(NSData *)data;
-
-/**
- *  将GB2312字符转为UTF-8
- *
- *  @param data GB2312字符Data
- *
- *  @return UTF-8字符串
- */
-+ (NSString *)GB2312ToUTF8:(NSData *)data;
 
 @end

@@ -22,35 +22,32 @@
  *  @return 拉伸后的图片
  */
 + (UIImage *)stretchImageWithImageName:(NSString *)imageName
-                             withWidth:(float)width
-                             andHeight:(float)height
+                              andWidth:(float)width
+                                height:(float)height
 {
     UIImage *sourceImage = [UIImage imageNamed:imageName];
-    UIImage *stretchImage = [self stretchImageWithImage:sourceImage
-                                              withWidth:width
-                                              andHeight:height];
+    UIImage *stretchImage = [sourceImage stretchImageWithWidth:width
+                                                     andHeight:height];
     return stretchImage;
 }
 
+#pragma mark - 实例方法
 /**
  *  拉伸图片
  *
- *  @param image  目标图片
  *  @param width  距离左边的长度
  *  @param height 距离底部的长度
  *
  *  @return 拉伸后的图片
  */
-+ (UIImage *)stretchImageWithImage:(UIImage *)image
-                         withWidth:(float)width
+- (UIImage *)stretchImageWithWidth:(float)width
                          andHeight:(float)height
 {
-    UIImage *stretchImage = [image stretchableImageWithLeftCapWidth:width
+    UIImage *stretchImage = [self stretchableImageWithLeftCapWidth:width
                                                              topCapHeight:height];
     return stretchImage;
 }
 
-#pragma mark - 实例方法
 /**
  * 将UIColor变换为UIImage
  *

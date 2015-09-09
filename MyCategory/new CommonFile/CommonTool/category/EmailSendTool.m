@@ -83,8 +83,6 @@
     
     for (NSString *path in paths)
     {
-        NSURL *url = [NSURL URLWithString:path];
-        
         NSData *data = [NSData dataWithContentsOfFile:path];
         NSString *name = [[path componentsSeparatedByString:@"/"] lastObject];
         [mailPicker addAttachmentData:data mimeType:[path mimeType] fileName:name];
