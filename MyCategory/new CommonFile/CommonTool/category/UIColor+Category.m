@@ -1,6 +1,6 @@
 //
-//  UIColor+category.m
-//  HaiWangXC
+//  UIColor+Category.m
+//  MyCategory
 //
 //  Created by lkx on 14-11-21.
 //  Copyright (c) 2014年 cnmobi. All rights reserved.

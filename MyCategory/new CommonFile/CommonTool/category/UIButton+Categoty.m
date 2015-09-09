@@ -1,6 +1,6 @@
 //
-//  UIButton+categoty.m
-//  HaiWangXC
+//  UIButton+Categoty.m
+//  MyCategory
 //
 //  Created by lkx on 14-11-27.
 //  Copyright (c) 2014年 cnmobi. All rights reserved.

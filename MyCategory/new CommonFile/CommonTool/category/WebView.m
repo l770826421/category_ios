@@ -1,6 +1,6 @@
 //
 //  WebView.m
-//  HaiWangXC
+//  MyCategory
 //
 //  Created by lkx on 14-11-28.
 //  Copyright (c) 2014年 cnmobi. All rights reserved.

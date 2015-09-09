@@ -1,6 +1,6 @@
 //
-//  NSData+category.h
-//  HaiWangXC
+//  NSData+Category.h
+//  MyCategory
 //
 //  Created by lkx on 14-12-22.
 //  Copyright (c) 2014年 cnmobi. All rights reserved.

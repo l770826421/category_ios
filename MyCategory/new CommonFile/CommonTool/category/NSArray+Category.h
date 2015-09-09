@@ -1,6 +1,6 @@
 //
-//  NSArray+category.h
-//  HaiWangXC
+//  NSArray+Category.h
+//  MyCategory
 //
 //  Created by lkx on 15-2-4.
 //  Copyright (c) 2015年 cnmobi. All rights reserved.
