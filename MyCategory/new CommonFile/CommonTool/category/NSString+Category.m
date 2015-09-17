@@ -8,6 +8,9 @@
 
 #import "NSString+Category.h"
 
+#define Billion 1000000000.0    // 十亿
+#define Million 1000000.0       // 百万
+
 @implementation NSString (Category)
 
 #pragma mark - 类方法
@@ -34,11 +37,11 @@
 {
     if (number > 1000000000)
     {
-        return [NSString stringWithFormat:@" %.1f billion", number/1000000000.0];
+        return [NSString stringWithFormat:@" %.1f billion", number/Billion];
     }
     else
     {
-        return [NSString stringWithFormat:@" %.1f million", number/1000000.0];
+        return [NSString stringWithFormat:@" %.1f million", number/Million];
     }
 }
 

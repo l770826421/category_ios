@@ -25,9 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 //    [self systemSendEmail];
-    [self sendMailInApp];
 //    [self doBackground];
-    _tabView.editing = YES;
+    _tabView.editing = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,7 +54,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
+    [self sendMailInApp];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
