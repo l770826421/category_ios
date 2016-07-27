@@ -1,5 +1,5 @@
 //
-//  TextField.h
+//  LKXTextField.h
 //  MyCategory
 //
 //  Created by lkx on 15-1-4.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TextField : UITextField
+@interface LKXTextField : UITextField
 
 @end

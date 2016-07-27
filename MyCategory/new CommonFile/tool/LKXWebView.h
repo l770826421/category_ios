@@ -1,5 +1,5 @@
 //
-//  WebView.h
+//  LKXWebView.h
 //  MyCategory
 //
 //  Created by lkx on 14-11-28.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebView : UIWebView <UIWebViewDelegate>
+@interface LKXWebView : UIWebView <UIWebViewDelegate>
 
 @property (nonatomic, copy) void (^ReturnWebInfoBlock)(NSString *info);
 

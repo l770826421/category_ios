@@ -1,14 +1,14 @@
 //
-//  TextField.m
+//  LKXTextField.m
 //  MyCategory
 //
 //  Created by lkx on 15-1-4.
 //  Copyright (c) 2015年 cnmobi. All rights reserved.
 //
 
-#import "TextField.h"
+#import "LKXTextField.h"
 
-@implementation TextField
+@implementation LKXTextField
 
 - (id)initWithFrame:(CGRect)frame
 {

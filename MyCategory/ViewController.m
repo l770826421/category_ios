@@ -9,7 +9,7 @@
 #import "ViewController.h"//
 #import "NSString+category.h"
 #import <MessageUI/MFMailComposeViewController.h>
-#import "EmailSendTool.h"
+#import "LKXEmailSendTool.h"
 
 /**
  *  测试tableView和发邮件
@@ -95,6 +95,10 @@
 //调用系统邮件发送
 - (void)systemSendEmail
 {
+    if (![LKXEmailSendTool canSendEmail]) {
+        return;
+    }
+    
     //添加收件人
     NSMutableArray *toRecipients = [[NSMutableArray alloc] init];
     [toRecipients addObject:@"770826421@qq.com"];
@@ -107,7 +111,7 @@
     NSMutableArray *bccRecipients = [[NSMutableArray alloc] init];
     [bccRecipients addObject:@"951064078@qq.com"];
     
-    [EmailSendTool systemSendEmailWithRecipients:toRecipients
+    [LKXEmailSendTool systemSendEmailWithRecipients:toRecipients
                                  andCcRecipients:ccRecipients
                                 andBccRecipients:bccRecipients
                                         addTheme:@"test 2"
@@ -129,6 +133,10 @@
 
 - (void)displayMailPicker
 {
+    if (![LKXEmailSendTool canSendEmail]) {
+        return;
+    }
+    
 //    MFMailComposeViewController *mailPicker = [[MFMailComposeViewController alloc] init];
 //    mailPicker.mailComposeDelegate = self;
     
@@ -167,7 +175,7 @@
     NSString *file1 = [[NSBundle mainBundle] pathForResource:@"rewards_on" ofType:@"png"];
     [arr addObject:file1];
     
-    [EmailSendTool mailComposeSendEmailWithRecipients:toRecipients
+    [LKXEmailSendTool mailComposeSendEmailWithRecipients:toRecipients
                                       andCcRecipients:ccRecipients
                                      andBccRecipients:bccRecipients
                                              addTheme:@"mailCompose4"

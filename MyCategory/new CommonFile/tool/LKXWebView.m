@@ -1,14 +1,14 @@
 //
-//  WebView.m
+//  LKXWebView.m
 //  MyCategory
 //
 //  Created by lkx on 14-11-28.
 //  Copyright (c) 2014年 cnmobi. All rights reserved.
 //
 
-#import "WebView.h"
+#import "LKXWebView.h"
 
-@implementation WebView 
+@implementation LKXWebView
 
 - (id)initWithFrame:(CGRect)frame
 {

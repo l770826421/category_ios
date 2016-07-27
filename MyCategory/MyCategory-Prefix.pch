@@ -14,7 +14,7 @@
 
 #define IsRunTheDev 1
 
-#import "APPDefine.h"
+#import "LKXAPPDefine.h"
 #import <UIKit/UIKit.h>
 
 #endif

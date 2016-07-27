@@ -1,5 +1,5 @@
 //
-//  EmailSendTool.h
+//  LKXEmailSendTool.h
 //  MyCategory
 //
 //  Created by Developer on 15/5/22.
@@ -8,7 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface EmailSendTool : NSObject
+@interface LKXEmailSendTool : NSObject
+
+/**
+ *  @author 刘克邪
+ *
+ *  @brief  判断是否能启动邮件
+ *
+ */
++ (BOOL)canSendEmail;
 
 /**
  *  直接调用系统邮件app发送

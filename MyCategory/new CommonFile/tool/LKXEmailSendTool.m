@@ -1,16 +1,30 @@
 //
-//  EmailSendTool.m
+//  LKXEmailSendTool.m
 //  MyCategory
 //
 //  Created by Developer on 15/5/22.
 //  Copyright (c) 2015年 Developer. All rights reserved.
 //
 
-#import "EmailSendTool.h"
+#import "LKXEmailSendTool.h"
 #import <MessageUI/MFMailComposeViewController.h>
 #import "NSString+category.h"
 
-@implementation EmailSendTool
+@implementation LKXEmailSendTool
+
+/**
+ *  @author 刘克邪
+ *
+ *  @brief  判断是否能启动邮件
+ *
+ */
++ (BOOL)canSendEmail {
+    if (![MFMailComposeViewController canSendMail]) {
+        LKXMLog(@"不能启动邮件");
+        return NO;
+    }
+    return YES;
+}
 
 /**
  *  直接调用系统邮件app发送
@@ -27,6 +41,10 @@
                              addTheme:(NSString *)theme
                               addBody:(NSString *)body
 {
+    if (![self canSendEmail]) {
+        return;
+    }
+    
     NSMutableString *mailUrl = [[NSMutableString alloc] init];
     
     //添加收件人
@@ -68,6 +86,10 @@
                          addAttachmentFile:(NSArray *)paths
                                addDelegate:(UIViewController *)delegate
 {
+    if (![self canSendEmail]) {
+        return;
+    }
+    
     MFMailComposeViewController *mailPicker = [[MFMailComposeViewController alloc] init];
     mailPicker.mailComposeDelegate = (id<MFMailComposeViewControllerDelegate>)delegate;
     
