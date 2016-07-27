@@ -7,24 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1650A6DB1D4861A9008D4438 /* NSArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650A6BD1D4861A8008D4438 /* NSArray+Category.m */; };
-		1650A6DC1D4861A9008D4438 /* NSData+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650A6BF1D4861A8008D4438 /* NSData+Category.m */; };
-		1650A6DD1D4861A9008D4438 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650A6C11D4861A8008D4438 /* NSDate+Category.m */; };
-		1650A6DE1D4861A9008D4438 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650A6C31D4861A8008D4438 /* NSString+Category.m */; };
-		1650A6DF1D4861A9008D4438 /* NSString+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650A6C51D4861A8008D4438 /* NSString+Encryption.m */; };
-		1650A6E01D4861A9008D4438 /* NSString+Verification.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650A6C71D4861A8008D4438 /* NSString+Verification.m */; };
-		1650A6E21D4861A9008D4438 /* UIButton+Categoty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650A6CB1D4861A9008D4438 /* UIButton+Categoty.m */; };
-		1650A6E31D4861A9008D4438 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650A6CD1D4861A9008D4438 /* UIColor+Category.m */; };
-		1650A6E41D4861A9008D4438 /* UIControl+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650A6CF1D4861A9008D4438 /* UIControl+Runtime.m */; };
-		1650A6E51D4861A9008D4438 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1650A6D11D4861A9008D4438 /* UIImage+Category.m */; };
-		166B50D41D4862E5003F4204 /* LKXTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50D11D4862E5003F4204 /* LKXTextField.m */; };
-		166B50D51D4862E5003F4204 /* LKXWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50D31D4862E5003F4204 /* LKXWebView.m */; };
-		166B50DA1D48631E003F4204 /* LKXEmailSendTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50D71D48631E003F4204 /* LKXEmailSendTool.m */; };
-		166B50DB1D48631E003F4204 /* LKXSpringCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50D91D48631E003F4204 /* LKXSpringCollectionViewFlowLayout.m */; };
-		166B50E71D4863C3003F4204 /* MBHUDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50DE1D4863C3003F4204 /* MBHUDTool.m */; };
-		166B50E81D4863C3003F4204 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50E01D4863C3003F4204 /* MBProgressHUD.m */; };
-		166B50E91D4863C3003F4204 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50E31D4863C3003F4204 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		166B50EA1D4863C3003F4204 /* ReachabilityTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50E51D4863C3003F4204 /* ReachabilityTool.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		166B51291D486B1E003F4204 /* NSArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50EE1D486B1E003F4204 /* NSArray+Category.m */; };
+		166B512A1D486B1E003F4204 /* NSData+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50F01D486B1E003F4204 /* NSData+Category.m */; };
+		166B512B1D486B1E003F4204 /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50F21D486B1E003F4204 /* NSDate+Category.m */; };
+		166B512C1D486B1E003F4204 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50F41D486B1E003F4204 /* NSString+Category.m */; };
+		166B512D1D486B1E003F4204 /* NSString+Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50F61D486B1E003F4204 /* NSString+Encryption.m */; };
+		166B512E1D486B1E003F4204 /* NSString+Verification.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50F81D486B1E003F4204 /* NSString+Verification.m */; };
+		166B512F1D486B1E003F4204 /* UIButton+Categoty.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50FA1D486B1E003F4204 /* UIButton+Categoty.m */; };
+		166B51301D486B1E003F4204 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50FC1D486B1E003F4204 /* UIColor+Category.m */; };
+		166B51311D486B1E003F4204 /* UIControl+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B50FE1D486B1E003F4204 /* UIControl+Runtime.m */; };
+		166B51321D486B1E003F4204 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51001D486B1E003F4204 /* UIImage+Category.m */; };
+		166B51331D486B1E003F4204 /* UIKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51031D486B1E003F4204 /* UIKeyboardView.m */; };
+		166B51341D486B1E003F4204 /* UIKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51051D486B1E003F4204 /* UIKeyboardViewController.m */; };
+		166B51351D486B1E003F4204 /* BigBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51081D486B1E003F4204 /* BigBtn.m */; };
+		166B51361D486B1E003F4204 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B510A1D486B1E003F4204 /* ChineseToPinyin.m */; };
+		166B51371D486B1E003F4204 /* LKX_Tooles.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B510C1D486B1E003F4204 /* LKX_Tooles.m */; };
+		166B51381D486B1E003F4204 /* LKXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B510E1D486B1E003F4204 /* LKXAlertView.m */; };
+		166B51391D486B1E003F4204 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51141D486B1E003F4204 /* UIView+Common.m */; };
+		166B513A1D486B1E003F4204 /* LKXEmailSendTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51171D486B1E003F4204 /* LKXEmailSendTool.m */; };
+		166B513B1D486B1E003F4204 /* LKXSpringCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51191D486B1E003F4204 /* LKXSpringCollectionViewFlowLayout.m */; };
+		166B513C1D486B1E003F4204 /* LKXTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B511B1D486B1E003F4204 /* LKXTextField.m */; };
+		166B513D1D486B1E003F4204 /* LKXWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B511D1D486B1E003F4204 /* LKXWebView.m */; };
+		166B513E1D486B1E003F4204 /* MBHUDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51201D486B1E003F4204 /* MBHUDTool.m */; };
+		166B513F1D486B1E003F4204 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51221D486B1E003F4204 /* MBProgressHUD.m */; };
+		166B51401D486B1E003F4204 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51251D486B1E003F4204 /* Reachability.m */; };
+		166B51411D486B1E003F4204 /* ReachabilityTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51271D486B1E003F4204 /* ReachabilityTool.m */; };
 		8B06A90E1AF0D27800329F8E /* CollectAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B06A90D1AF0D27800329F8E /* CollectAction.m */; };
 		8B68FB001B0AD25900A1E707 /* 商品发布及检索功能使用说明.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B68FAFF1B0AD25900A1E707 /* 商品发布及检索功能使用说明.pdf */; };
 		8B71B5E71ADBB0FF00385223 /* rewards_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B71B5E41ADBB0FF00385223 /* rewards_on.png */; };
@@ -39,13 +46,6 @@
 		8BAA207D1ACE850600A85F17 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA207C1ACE850600A85F17 /* Images.xcassets */; };
 		8BAA20801ACE850600A85F17 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BAA207E1ACE850600A85F17 /* LaunchScreen.xib */; };
 		8BAA208C1ACE850600A85F17 /* MyCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA208B1ACE850600A85F17 /* MyCategoryTests.m */; };
-		8BAA20C71ACE856500A85F17 /* UIKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA20B11ACE856500A85F17 /* UIKeyboardView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8BAA20C81ACE856500A85F17 /* UIKeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA20B31ACE856500A85F17 /* UIKeyboardViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8BAA20C91ACE856500A85F17 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA20B71ACE856500A85F17 /* ChineseToPinyin.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8BAA20CD1ACE856500A85F17 /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA20C01ACE856500A85F17 /* UIView+Common.m */; };
-		8BAA20CE1ACE856500A85F17 /* LKX_Tooles.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA20C21ACE856500A85F17 /* LKX_Tooles.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		8BAA20D01ACE856500A85F17 /* LKXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA20C61ACE856500A85F17 /* LKXAlertView.m */; };
-		8BAA20D31ACE858700A85F17 /* BigBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BAA20D21ACE858700A85F17 /* BigBtn.m */; };
 		8BC9188A1B9ECE7F00CEDE38 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC918891B9ECE7F00CEDE38 /* TestVC.m */; };
 		8BE8E3C01B12D3D000BA410B /* VVSpringCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE8E3BF1B12D3D000BA410B /* VVSpringCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
@@ -61,43 +61,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1650A6BC1D4861A8008D4438 /* NSArray+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Category.h"; sourceTree = "<group>"; };
-		1650A6BD1D4861A8008D4438 /* NSArray+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Category.m"; sourceTree = "<group>"; };
-		1650A6BE1D4861A8008D4438 /* NSData+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Category.h"; sourceTree = "<group>"; };
-		1650A6BF1D4861A8008D4438 /* NSData+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Category.m"; sourceTree = "<group>"; };
-		1650A6C01D4861A8008D4438 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
-		1650A6C11D4861A8008D4438 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
-		1650A6C21D4861A8008D4438 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
-		1650A6C31D4861A8008D4438 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
-		1650A6C41D4861A8008D4438 /* NSString+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encryption.h"; sourceTree = "<group>"; };
-		1650A6C51D4861A8008D4438 /* NSString+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encryption.m"; sourceTree = "<group>"; };
-		1650A6C61D4861A8008D4438 /* NSString+Verification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verification.h"; sourceTree = "<group>"; };
-		1650A6C71D4861A8008D4438 /* NSString+Verification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verification.m"; sourceTree = "<group>"; };
-		1650A6CA1D4861A8008D4438 /* UIButton+Categoty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Categoty.h"; sourceTree = "<group>"; };
-		1650A6CB1D4861A9008D4438 /* UIButton+Categoty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Categoty.m"; sourceTree = "<group>"; };
-		1650A6CC1D4861A9008D4438 /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
-		1650A6CD1D4861A9008D4438 /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
-		1650A6CE1D4861A9008D4438 /* UIControl+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Runtime.h"; sourceTree = "<group>"; };
-		1650A6CF1D4861A9008D4438 /* UIControl+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Runtime.m"; sourceTree = "<group>"; };
-		1650A6D01D4861A9008D4438 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
-		1650A6D11D4861A9008D4438 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
-		166B50D01D4862E5003F4204 /* LKXTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXTextField.h; sourceTree = "<group>"; };
-		166B50D11D4862E5003F4204 /* LKXTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXTextField.m; sourceTree = "<group>"; };
-		166B50D21D4862E5003F4204 /* LKXWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXWebView.h; sourceTree = "<group>"; };
-		166B50D31D4862E5003F4204 /* LKXWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXWebView.m; sourceTree = "<group>"; };
-		166B50D61D48631E003F4204 /* LKXEmailSendTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXEmailSendTool.h; sourceTree = "<group>"; };
-		166B50D71D48631E003F4204 /* LKXEmailSendTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXEmailSendTool.m; sourceTree = "<group>"; };
-		166B50D81D48631E003F4204 /* LKXSpringCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXSpringCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		166B50D91D48631E003F4204 /* LKXSpringCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXSpringCollectionViewFlowLayout.m; sourceTree = "<group>"; };
-		166B50DD1D4863C3003F4204 /* MBHUDTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBHUDTool.h; sourceTree = "<group>"; };
-		166B50DE1D4863C3003F4204 /* MBHUDTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBHUDTool.m; sourceTree = "<group>"; };
-		166B50DF1D4863C3003F4204 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		166B50E01D4863C3003F4204 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		166B50E21D4863C3003F4204 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		166B50E31D4863C3003F4204 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		166B50E41D4863C3003F4204 /* ReachabilityTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityTool.h; sourceTree = "<group>"; };
-		166B50E51D4863C3003F4204 /* ReachabilityTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityTool.m; sourceTree = "<group>"; };
-		166B50E61D4863C3003F4204 /* Reachability用法.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reachability用法.h"; sourceTree = "<group>"; };
+		166B50ED1D486B1E003F4204 /* NSArray+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Category.h"; sourceTree = "<group>"; };
+		166B50EE1D486B1E003F4204 /* NSArray+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Category.m"; sourceTree = "<group>"; };
+		166B50EF1D486B1E003F4204 /* NSData+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Category.h"; sourceTree = "<group>"; };
+		166B50F01D486B1E003F4204 /* NSData+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Category.m"; sourceTree = "<group>"; };
+		166B50F11D486B1E003F4204 /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
+		166B50F21D486B1E003F4204 /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
+		166B50F31D486B1E003F4204 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		166B50F41D486B1E003F4204 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		166B50F51D486B1E003F4204 /* NSString+Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encryption.h"; sourceTree = "<group>"; };
+		166B50F61D486B1E003F4204 /* NSString+Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encryption.m"; sourceTree = "<group>"; };
+		166B50F71D486B1E003F4204 /* NSString+Verification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Verification.h"; sourceTree = "<group>"; };
+		166B50F81D486B1E003F4204 /* NSString+Verification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Verification.m"; sourceTree = "<group>"; };
+		166B50F91D486B1E003F4204 /* UIButton+Categoty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Categoty.h"; sourceTree = "<group>"; };
+		166B50FA1D486B1E003F4204 /* UIButton+Categoty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Categoty.m"; sourceTree = "<group>"; };
+		166B50FB1D486B1E003F4204 /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
+		166B50FC1D486B1E003F4204 /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
+		166B50FD1D486B1E003F4204 /* UIControl+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Runtime.h"; sourceTree = "<group>"; };
+		166B50FE1D486B1E003F4204 /* UIControl+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Runtime.m"; sourceTree = "<group>"; };
+		166B50FF1D486B1E003F4204 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		166B51001D486B1E003F4204 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
+		166B51021D486B1E003F4204 /* UIKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKeyboardView.h; sourceTree = "<group>"; };
+		166B51031D486B1E003F4204 /* UIKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKeyboardView.m; sourceTree = "<group>"; };
+		166B51041D486B1E003F4204 /* UIKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKeyboardViewController.h; sourceTree = "<group>"; };
+		166B51051D486B1E003F4204 /* UIKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKeyboardViewController.m; sourceTree = "<group>"; };
+		166B51071D486B1E003F4204 /* BigBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigBtn.h; sourceTree = "<group>"; };
+		166B51081D486B1E003F4204 /* BigBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigBtn.m; sourceTree = "<group>"; };
+		166B51091D486B1E003F4204 /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyin.h; sourceTree = "<group>"; };
+		166B510A1D486B1E003F4204 /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyin.m; sourceTree = "<group>"; };
+		166B510B1D486B1E003F4204 /* LKX_Tooles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKX_Tooles.h; sourceTree = "<group>"; };
+		166B510C1D486B1E003F4204 /* LKX_Tooles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKX_Tooles.m; sourceTree = "<group>"; };
+		166B510D1D486B1E003F4204 /* LKXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXAlertView.h; sourceTree = "<group>"; };
+		166B510E1D486B1E003F4204 /* LKXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXAlertView.m; sourceTree = "<group>"; };
+		166B510F1D486B1E003F4204 /* LKXAPPDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXAPPDefine.h; sourceTree = "<group>"; };
+		166B51101D486B1E003F4204 /* Macros_UICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros_UICommon.h; sourceTree = "<group>"; };
+		166B51111D486B1E003F4204 /* ReachabilityTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityTool.h; sourceTree = "<group>"; };
+		166B51121D486B1E003F4204 /* SingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
+		166B51131D486B1E003F4204 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
+		166B51141D486B1E003F4204 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
+		166B51161D486B1E003F4204 /* LKXEmailSendTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXEmailSendTool.h; sourceTree = "<group>"; };
+		166B51171D486B1E003F4204 /* LKXEmailSendTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXEmailSendTool.m; sourceTree = "<group>"; };
+		166B51181D486B1E003F4204 /* LKXSpringCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXSpringCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		166B51191D486B1E003F4204 /* LKXSpringCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXSpringCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		166B511A1D486B1E003F4204 /* LKXTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXTextField.h; sourceTree = "<group>"; };
+		166B511B1D486B1E003F4204 /* LKXTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXTextField.m; sourceTree = "<group>"; };
+		166B511C1D486B1E003F4204 /* LKXWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXWebView.h; sourceTree = "<group>"; };
+		166B511D1D486B1E003F4204 /* LKXWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXWebView.m; sourceTree = "<group>"; };
+		166B511F1D486B1E003F4204 /* MBHUDTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBHUDTool.h; sourceTree = "<group>"; };
+		166B51201D486B1E003F4204 /* MBHUDTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBHUDTool.m; sourceTree = "<group>"; };
+		166B51211D486B1E003F4204 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		166B51221D486B1E003F4204 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		166B51241D486B1E003F4204 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		166B51251D486B1E003F4204 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		166B51261D486B1E003F4204 /* ReachabilityTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityTool.h; sourceTree = "<group>"; };
+		166B51271D486B1E003F4204 /* ReachabilityTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityTool.m; sourceTree = "<group>"; };
+		166B51281D486B1E003F4204 /* Reachability用法.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reachability用法.h"; sourceTree = "<group>"; };
 		8B06A90C1AF0D27800329F8E /* CollectAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectAction.h; sourceTree = "<group>"; };
 		8B06A90D1AF0D27800329F8E /* CollectAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectAction.m; sourceTree = "<group>"; };
 		8B68FAFF1B0AD25900A1E707 /* 商品发布及检索功能使用说明.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "商品发布及检索功能使用说明.pdf"; sourceTree = "<group>"; };
@@ -121,24 +139,7 @@
 		8BAA20851ACE850600A85F17 /* MyCategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BAA208A1ACE850600A85F17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BAA208B1ACE850600A85F17 /* MyCategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCategoryTests.m; sourceTree = "<group>"; };
-		8BAA20B01ACE856500A85F17 /* UIKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKeyboardView.h; sourceTree = "<group>"; };
-		8BAA20B11ACE856500A85F17 /* UIKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKeyboardView.m; sourceTree = "<group>"; };
-		8BAA20B21ACE856500A85F17 /* UIKeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKeyboardViewController.h; sourceTree = "<group>"; };
-		8BAA20B31ACE856500A85F17 /* UIKeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKeyboardViewController.m; sourceTree = "<group>"; };
-		8BAA20B51ACE856500A85F17 /* LKXAPPDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXAPPDefine.h; sourceTree = "<group>"; };
-		8BAA20B61ACE856500A85F17 /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyin.h; sourceTree = "<group>"; };
-		8BAA20B71ACE856500A85F17 /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyin.m; sourceTree = "<group>"; };
-		8BAA20BF1ACE856500A85F17 /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Common.h"; sourceTree = "<group>"; };
-		8BAA20C01ACE856500A85F17 /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Common.m"; sourceTree = "<group>"; };
-		8BAA20C11ACE856500A85F17 /* LKX_Tooles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKX_Tooles.h; sourceTree = "<group>"; };
-		8BAA20C21ACE856500A85F17 /* LKX_Tooles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKX_Tooles.m; sourceTree = "<group>"; };
-		8BAA20C51ACE856500A85F17 /* LKXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXAlertView.h; sourceTree = "<group>"; };
-		8BAA20C61ACE856500A85F17 /* LKXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXAlertView.m; sourceTree = "<group>"; };
-		8BAA20D11ACE858700A85F17 /* BigBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigBtn.h; sourceTree = "<group>"; };
-		8BAA20D21ACE858700A85F17 /* BigBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigBtn.m; sourceTree = "<group>"; };
 		8BAA20D61ACE860E00A85F17 /* MyCategory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCategory-Prefix.pch"; sourceTree = "<group>"; };
-		8BC918601B9EB69900CEDE38 /* SingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonMacro.h; sourceTree = "<group>"; };
-		8BC918681B9ECDD400CEDE38 /* Macros_UICommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros_UICommon.h; sourceTree = "<group>"; };
 		8BC918881B9ECE7F00CEDE38 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		8BC918891B9ECE7F00CEDE38 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		8BE8E3BE1B12D3D000BA410B /* VVSpringCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVSpringCollectionViewFlowLayout.h; sourceTree = "<group>"; };
@@ -163,69 +164,112 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1650A6B71D4861A8008D4438 /* category */ = {
+		166B50EB1D486B1E003F4204 /* LKXCommonFile */ = {
 			isa = PBXGroup;
 			children = (
-				1650A6BC1D4861A8008D4438 /* NSArray+Category.h */,
-				1650A6BD1D4861A8008D4438 /* NSArray+Category.m */,
-				1650A6BE1D4861A8008D4438 /* NSData+Category.h */,
-				1650A6BF1D4861A8008D4438 /* NSData+Category.m */,
-				1650A6C01D4861A8008D4438 /* NSDate+Category.h */,
-				1650A6C11D4861A8008D4438 /* NSDate+Category.m */,
-				1650A6C21D4861A8008D4438 /* NSString+Category.h */,
-				1650A6C31D4861A8008D4438 /* NSString+Category.m */,
-				1650A6C41D4861A8008D4438 /* NSString+Encryption.h */,
-				1650A6C51D4861A8008D4438 /* NSString+Encryption.m */,
-				1650A6C61D4861A8008D4438 /* NSString+Verification.h */,
-				1650A6C71D4861A8008D4438 /* NSString+Verification.m */,
-				1650A6CA1D4861A8008D4438 /* UIButton+Categoty.h */,
-				1650A6CB1D4861A9008D4438 /* UIButton+Categoty.m */,
-				1650A6CC1D4861A9008D4438 /* UIColor+Category.h */,
-				1650A6CD1D4861A9008D4438 /* UIColor+Category.m */,
-				1650A6CE1D4861A9008D4438 /* UIControl+Runtime.h */,
-				1650A6CF1D4861A9008D4438 /* UIControl+Runtime.m */,
-				1650A6D01D4861A9008D4438 /* UIImage+Category.h */,
-				1650A6D11D4861A9008D4438 /* UIImage+Category.m */,
+				166B50EC1D486B1E003F4204 /* category */,
+				166B51011D486B1E003F4204 /* CommonKeyboard */,
+				166B51061D486B1E003F4204 /* CommonTool */,
+				166B51151D486B1E003F4204 /* tool */,
+			);
+			path = LKXCommonFile;
+			sourceTree = "<group>";
+		};
+		166B50EC1D486B1E003F4204 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				166B50ED1D486B1E003F4204 /* NSArray+Category.h */,
+				166B50EE1D486B1E003F4204 /* NSArray+Category.m */,
+				166B50EF1D486B1E003F4204 /* NSData+Category.h */,
+				166B50F01D486B1E003F4204 /* NSData+Category.m */,
+				166B50F11D486B1E003F4204 /* NSDate+Category.h */,
+				166B50F21D486B1E003F4204 /* NSDate+Category.m */,
+				166B50F31D486B1E003F4204 /* NSString+Category.h */,
+				166B50F41D486B1E003F4204 /* NSString+Category.m */,
+				166B50F51D486B1E003F4204 /* NSString+Encryption.h */,
+				166B50F61D486B1E003F4204 /* NSString+Encryption.m */,
+				166B50F71D486B1E003F4204 /* NSString+Verification.h */,
+				166B50F81D486B1E003F4204 /* NSString+Verification.m */,
+				166B50F91D486B1E003F4204 /* UIButton+Categoty.h */,
+				166B50FA1D486B1E003F4204 /* UIButton+Categoty.m */,
+				166B50FB1D486B1E003F4204 /* UIColor+Category.h */,
+				166B50FC1D486B1E003F4204 /* UIColor+Category.m */,
+				166B50FD1D486B1E003F4204 /* UIControl+Runtime.h */,
+				166B50FE1D486B1E003F4204 /* UIControl+Runtime.m */,
+				166B50FF1D486B1E003F4204 /* UIImage+Category.h */,
+				166B51001D486B1E003F4204 /* UIImage+Category.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
 		};
-		1650A6D41D4861A9008D4438 /* tool */ = {
+		166B51011D486B1E003F4204 /* CommonKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				166B50D61D48631E003F4204 /* LKXEmailSendTool.h */,
-				166B50D71D48631E003F4204 /* LKXEmailSendTool.m */,
-				166B50D81D48631E003F4204 /* LKXSpringCollectionViewFlowLayout.h */,
-				166B50D91D48631E003F4204 /* LKXSpringCollectionViewFlowLayout.m */,
-				166B50D01D4862E5003F4204 /* LKXTextField.h */,
-				166B50D11D4862E5003F4204 /* LKXTextField.m */,
-				166B50D21D4862E5003F4204 /* LKXWebView.h */,
-				166B50D31D4862E5003F4204 /* LKXWebView.m */,
-				166B50DC1D4863C3003F4204 /* MBHUDTool */,
-				166B50E11D4863C3003F4204 /* ReachabilityTool */,
+				166B51021D486B1E003F4204 /* UIKeyboardView.h */,
+				166B51031D486B1E003F4204 /* UIKeyboardView.m */,
+				166B51041D486B1E003F4204 /* UIKeyboardViewController.h */,
+				166B51051D486B1E003F4204 /* UIKeyboardViewController.m */,
+			);
+			path = CommonKeyboard;
+			sourceTree = "<group>";
+		};
+		166B51061D486B1E003F4204 /* CommonTool */ = {
+			isa = PBXGroup;
+			children = (
+				166B51071D486B1E003F4204 /* BigBtn.h */,
+				166B51081D486B1E003F4204 /* BigBtn.m */,
+				166B51091D486B1E003F4204 /* ChineseToPinyin.h */,
+				166B510A1D486B1E003F4204 /* ChineseToPinyin.m */,
+				166B510B1D486B1E003F4204 /* LKX_Tooles.h */,
+				166B510C1D486B1E003F4204 /* LKX_Tooles.m */,
+				166B510D1D486B1E003F4204 /* LKXAlertView.h */,
+				166B510E1D486B1E003F4204 /* LKXAlertView.m */,
+				166B510F1D486B1E003F4204 /* LKXAPPDefine.h */,
+				166B51101D486B1E003F4204 /* Macros_UICommon.h */,
+				166B51111D486B1E003F4204 /* ReachabilityTool.h */,
+				166B51121D486B1E003F4204 /* SingletonMacro.h */,
+				166B51131D486B1E003F4204 /* UIView+Common.h */,
+				166B51141D486B1E003F4204 /* UIView+Common.m */,
+			);
+			path = CommonTool;
+			sourceTree = "<group>";
+		};
+		166B51151D486B1E003F4204 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				166B51161D486B1E003F4204 /* LKXEmailSendTool.h */,
+				166B51171D486B1E003F4204 /* LKXEmailSendTool.m */,
+				166B51181D486B1E003F4204 /* LKXSpringCollectionViewFlowLayout.h */,
+				166B51191D486B1E003F4204 /* LKXSpringCollectionViewFlowLayout.m */,
+				166B511A1D486B1E003F4204 /* LKXTextField.h */,
+				166B511B1D486B1E003F4204 /* LKXTextField.m */,
+				166B511C1D486B1E003F4204 /* LKXWebView.h */,
+				166B511D1D486B1E003F4204 /* LKXWebView.m */,
+				166B511E1D486B1E003F4204 /* MBHUDTool */,
+				166B51231D486B1E003F4204 /* ReachabilityTool */,
 			);
 			path = tool;
 			sourceTree = "<group>";
 		};
-		166B50DC1D4863C3003F4204 /* MBHUDTool */ = {
+		166B511E1D486B1E003F4204 /* MBHUDTool */ = {
 			isa = PBXGroup;
 			children = (
-				166B50DD1D4863C3003F4204 /* MBHUDTool.h */,
-				166B50DE1D4863C3003F4204 /* MBHUDTool.m */,
-				166B50DF1D4863C3003F4204 /* MBProgressHUD.h */,
-				166B50E01D4863C3003F4204 /* MBProgressHUD.m */,
+				166B511F1D486B1E003F4204 /* MBHUDTool.h */,
+				166B51201D486B1E003F4204 /* MBHUDTool.m */,
+				166B51211D486B1E003F4204 /* MBProgressHUD.h */,
+				166B51221D486B1E003F4204 /* MBProgressHUD.m */,
 			);
 			path = MBHUDTool;
 			sourceTree = "<group>";
 		};
-		166B50E11D4863C3003F4204 /* ReachabilityTool */ = {
+		166B51231D486B1E003F4204 /* ReachabilityTool */ = {
 			isa = PBXGroup;
 			children = (
-				166B50E21D4863C3003F4204 /* Reachability.h */,
-				166B50E31D4863C3003F4204 /* Reachability.m */,
-				166B50E41D4863C3003F4204 /* ReachabilityTool.h */,
-				166B50E51D4863C3003F4204 /* ReachabilityTool.m */,
-				166B50E61D4863C3003F4204 /* Reachability用法.h */,
+				166B51241D486B1E003F4204 /* Reachability.h */,
+				166B51251D486B1E003F4204 /* Reachability.m */,
+				166B51261D486B1E003F4204 /* ReachabilityTool.h */,
+				166B51271D486B1E003F4204 /* ReachabilityTool.m */,
+				166B51281D486B1E003F4204 /* Reachability用法.h */,
 			);
 			path = ReachabilityTool;
 			sourceTree = "<group>";
@@ -251,9 +295,9 @@
 		8BAA206E1ACE850600A85F17 /* MyCategory */ = {
 			isa = PBXGroup;
 			children = (
+				166B50EB1D486B1E003F4204 /* LKXCommonFile */,
 				8BE8E3BD1B12D3D000BA410B /* VVSpringCollectionViewFlowLayout */,
 				8B68FAFF1B0AD25900A1E707 /* 商品发布及检索功能使用说明.pdf */,
-				8BAA20AE1ACE856500A85F17 /* new CommonFile */,
 				8BAA20731ACE850600A85F17 /* AppDelegate.h */,
 				8BAA20741ACE850600A85F17 /* AppDelegate.m */,
 				8BAA20761ACE850600A85F17 /* ViewController.h */,
@@ -302,48 +346,6 @@
 				8BAA208A1ACE850600A85F17 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8BAA20AE1ACE856500A85F17 /* new CommonFile */ = {
-			isa = PBXGroup;
-			children = (
-				1650A6B71D4861A8008D4438 /* category */,
-				1650A6D41D4861A9008D4438 /* tool */,
-				8BAA20AF1ACE856500A85F17 /* CommonKeyboard */,
-				8BAA20B41ACE856500A85F17 /* CommonTool */,
-			);
-			path = "new CommonFile";
-			sourceTree = "<group>";
-		};
-		8BAA20AF1ACE856500A85F17 /* CommonKeyboard */ = {
-			isa = PBXGroup;
-			children = (
-				8BAA20B01ACE856500A85F17 /* UIKeyboardView.h */,
-				8BAA20B11ACE856500A85F17 /* UIKeyboardView.m */,
-				8BAA20B21ACE856500A85F17 /* UIKeyboardViewController.h */,
-				8BAA20B31ACE856500A85F17 /* UIKeyboardViewController.m */,
-			);
-			path = CommonKeyboard;
-			sourceTree = "<group>";
-		};
-		8BAA20B41ACE856500A85F17 /* CommonTool */ = {
-			isa = PBXGroup;
-			children = (
-				8BAA20B51ACE856500A85F17 /* LKXAPPDefine.h */,
-				8BC918681B9ECDD400CEDE38 /* Macros_UICommon.h */,
-				8BAA20D11ACE858700A85F17 /* BigBtn.h */,
-				8BAA20D21ACE858700A85F17 /* BigBtn.m */,
-				8BAA20B61ACE856500A85F17 /* ChineseToPinyin.h */,
-				8BAA20B71ACE856500A85F17 /* ChineseToPinyin.m */,
-				8BC918601B9EB69900CEDE38 /* SingletonMacro.h */,
-				8BAA20BF1ACE856500A85F17 /* UIView+Common.h */,
-				8BAA20C01ACE856500A85F17 /* UIView+Common.m */,
-				8BAA20C11ACE856500A85F17 /* LKX_Tooles.h */,
-				8BAA20C21ACE856500A85F17 /* LKX_Tooles.m */,
-				8BAA20C51ACE856500A85F17 /* LKXAlertView.h */,
-				8BAA20C61ACE856500A85F17 /* LKXAlertView.m */,
-			);
-			path = CommonTool;
 			sourceTree = "<group>";
 		};
 		8BE8E3BD1B12D3D000BA410B /* VVSpringCollectionViewFlowLayout */ = {
@@ -466,38 +468,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BE8E3C01B12D3D000BA410B /* VVSpringCollectionViewFlowLayout.m in Sources */,
+				166B513D1D486B1E003F4204 /* LKXWebView.m in Sources */,
+				166B51391D486B1E003F4204 /* UIView+Common.m in Sources */,
+				166B51291D486B1E003F4204 /* NSArray+Category.m in Sources */,
 				8BAA20781ACE850600A85F17 /* ViewController.m in Sources */,
+				166B51381D486B1E003F4204 /* LKXAlertView.m in Sources */,
+				166B51311D486B1E003F4204 /* UIControl+Runtime.m in Sources */,
+				166B51371D486B1E003F4204 /* LKX_Tooles.m in Sources */,
+				166B513B1D486B1E003F4204 /* LKXSpringCollectionViewFlowLayout.m in Sources */,
+				166B51301D486B1E003F4204 /* UIColor+Category.m in Sources */,
+				166B51411D486B1E003F4204 /* ReachabilityTool.m in Sources */,
+				166B513A1D486B1E003F4204 /* LKXEmailSendTool.m in Sources */,
+				166B51361D486B1E003F4204 /* ChineseToPinyin.m in Sources */,
+				166B51321D486B1E003F4204 /* UIImage+Category.m in Sources */,
+				166B512F1D486B1E003F4204 /* UIButton+Categoty.m in Sources */,
 				8BC9188A1B9ECE7F00CEDE38 /* TestVC.m in Sources */,
-				8BAA20CD1ACE856500A85F17 /* UIView+Common.m in Sources */,
-				166B50DB1D48631E003F4204 /* LKXSpringCollectionViewFlowLayout.m in Sources */,
-				8BAA20CE1ACE856500A85F17 /* LKX_Tooles.m in Sources */,
-				1650A6E21D4861A9008D4438 /* UIButton+Categoty.m in Sources */,
-				1650A6E01D4861A9008D4438 /* NSString+Verification.m in Sources */,
-				166B50D41D4862E5003F4204 /* LKXTextField.m in Sources */,
+				166B512E1D486B1E003F4204 /* NSString+Verification.m in Sources */,
+				166B512A1D486B1E003F4204 /* NSData+Category.m in Sources */,
 				8BAA20751ACE850600A85F17 /* AppDelegate.m in Sources */,
-				1650A6DE1D4861A9008D4438 /* NSString+Category.m in Sources */,
-				8BAA20C91ACE856500A85F17 /* ChineseToPinyin.m in Sources */,
-				166B50DA1D48631E003F4204 /* LKXEmailSendTool.m in Sources */,
-				1650A6DD1D4861A9008D4438 /* NSDate+Category.m in Sources */,
-				166B50EA1D4863C3003F4204 /* ReachabilityTool.m in Sources */,
+				166B513E1D486B1E003F4204 /* MBHUDTool.m in Sources */,
+				166B513C1D486B1E003F4204 /* LKXTextField.m in Sources */,
+				166B51341D486B1E003F4204 /* UIKeyboardViewController.m in Sources */,
 				8B9ACE8E1B0ED6B100B495F0 /* DynamicsVC.m in Sources */,
-				166B50E81D4863C3003F4204 /* MBProgressHUD.m in Sources */,
-				1650A6DC1D4861A9008D4438 /* NSData+Category.m in Sources */,
-				1650A6E31D4861A9008D4438 /* UIColor+Category.m in Sources */,
+				166B513F1D486B1E003F4204 /* MBProgressHUD.m in Sources */,
+				166B512C1D486B1E003F4204 /* NSString+Category.m in Sources */,
 				8B06A90E1AF0D27800329F8E /* CollectAction.m in Sources */,
-				166B50D51D4862E5003F4204 /* LKXWebView.m in Sources */,
-				8BAA20C81ACE856500A85F17 /* UIKeyboardViewController.m in Sources */,
-				8BAA20D01ACE856500A85F17 /* LKXAlertView.m in Sources */,
+				166B512B1D486B1E003F4204 /* NSDate+Category.m in Sources */,
+				166B51401D486B1E003F4204 /* Reachability.m in Sources */,
 				8BAA20721ACE850600A85F17 /* main.m in Sources */,
-				1650A6DB1D4861A9008D4438 /* NSArray+Category.m in Sources */,
-				166B50E91D4863C3003F4204 /* Reachability.m in Sources */,
-				166B50E71D4863C3003F4204 /* MBHUDTool.m in Sources */,
-				8BAA20C71ACE856500A85F17 /* UIKeyboardView.m in Sources */,
+				166B51351D486B1E003F4204 /* BigBtn.m in Sources */,
+				166B512D1D486B1E003F4204 /* NSString+Encryption.m in Sources */,
+				166B51331D486B1E003F4204 /* UIKeyboardView.m in Sources */,
 				8B9ACE9D1B0F1BF200B495F0 /* SpringTableVC.m in Sources */,
-				1650A6DF1D4861A9008D4438 /* NSString+Encryption.m in Sources */,
-				8BAA20D31ACE858700A85F17 /* BigBtn.m in Sources */,
-				1650A6E41D4861A9008D4438 /* UIControl+Runtime.m in Sources */,
-				1650A6E51D4861A9008D4438 /* UIImage+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
