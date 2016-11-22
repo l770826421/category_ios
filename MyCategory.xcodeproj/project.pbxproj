@@ -32,6 +32,7 @@
 		166B513F1D486B1E003F4204 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51221D486B1E003F4204 /* MBProgressHUD.m */; };
 		166B51401D486B1E003F4204 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51251D486B1E003F4204 /* Reachability.m */; };
 		166B51411D486B1E003F4204 /* ReachabilityTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B51271D486B1E003F4204 /* ReachabilityTool.m */; };
+		16875DF31DE4456800F09085 /* LKXTouchIDValidateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16875DF21DE4456800F09085 /* LKXTouchIDValidateTool.m */; };
 		8B06A90E1AF0D27800329F8E /* CollectAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B06A90D1AF0D27800329F8E /* CollectAction.m */; };
 		8B68FB001B0AD25900A1E707 /* 商品发布及检索功能使用说明.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8B68FAFF1B0AD25900A1E707 /* 商品发布及检索功能使用说明.pdf */; };
 		8B71B5E71ADBB0FF00385223 /* rewards_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B71B5E41ADBB0FF00385223 /* rewards_on.png */; };
@@ -116,6 +117,8 @@
 		166B51261D486B1E003F4204 /* ReachabilityTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityTool.h; sourceTree = "<group>"; };
 		166B51271D486B1E003F4204 /* ReachabilityTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityTool.m; sourceTree = "<group>"; };
 		166B51281D486B1E003F4204 /* Reachability用法.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reachability用法.h"; sourceTree = "<group>"; };
+		16875DF11DE4456800F09085 /* LKXTouchIDValidateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKXTouchIDValidateTool.h; sourceTree = "<group>"; };
+		16875DF21DE4456800F09085 /* LKXTouchIDValidateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKXTouchIDValidateTool.m; sourceTree = "<group>"; };
 		8B06A90C1AF0D27800329F8E /* CollectAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectAction.h; sourceTree = "<group>"; };
 		8B06A90D1AF0D27800329F8E /* CollectAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectAction.m; sourceTree = "<group>"; };
 		8B68FAFF1B0AD25900A1E707 /* 商品发布及检索功能使用说明.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "商品发布及检索功能使用说明.pdf"; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 		166B51151D486B1E003F4204 /* tool */ = {
 			isa = PBXGroup;
 			children = (
+				16875DF11DE4456800F09085 /* LKXTouchIDValidateTool.h */,
+				16875DF21DE4456800F09085 /* LKXTouchIDValidateTool.m */,
 				166B51161D486B1E003F4204 /* LKXEmailSendTool.h */,
 				166B51171D486B1E003F4204 /* LKXEmailSendTool.m */,
 				166B51181D486B1E003F4204 /* LKXSpringCollectionViewFlowLayout.h */,
@@ -471,6 +476,7 @@
 				166B513D1D486B1E003F4204 /* LKXWebView.m in Sources */,
 				166B51391D486B1E003F4204 /* UIView+Common.m in Sources */,
 				166B51291D486B1E003F4204 /* NSArray+Category.m in Sources */,
+				16875DF31DE4456800F09085 /* LKXTouchIDValidateTool.m in Sources */,
 				8BAA20781ACE850600A85F17 /* ViewController.m in Sources */,
 				166B51381D486B1E003F4204 /* LKXAlertView.m in Sources */,
 				166B51311D486B1E003F4204 /* UIControl+Runtime.m in Sources */,
